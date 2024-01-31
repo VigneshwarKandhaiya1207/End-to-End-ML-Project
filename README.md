@@ -1,2 +1,13 @@
 # End-to-End-ML-Project
-End to end ML project with training and Prediction pipelines
+
+```bash
+conda create -m mlproj python=3.8 -y
+```
+
+```bash
+conda activate mlproj
+```
+
+```bash
+pip install -r requirements.txt
+```
