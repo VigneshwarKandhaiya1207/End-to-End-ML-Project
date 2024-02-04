@@ -1,11 +1,13 @@
 import logging
 import os
-
-from from_root import from_root
 from datetime import datetime
+from pathlib import Path
+from from_root import from_root
 
-LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
-log_paths= os.path.join(from_root,"logs",LOG_FILE)
+
+ROOT_DIR = Path(__file__).parent.parent 
+LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y')}.log"
+log_paths= os.path.join(from_root(),"logs")
 
 os.makedirs(log_paths,exist_ok=True)
 

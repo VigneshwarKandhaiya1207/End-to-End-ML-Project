@@ -11,5 +11,7 @@ types-PyYAML
 Flask
 Flask-Cors
 from_root
+pymongo
+dnspython
 
 -e .
