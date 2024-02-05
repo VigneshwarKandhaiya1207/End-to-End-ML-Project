@@ -13,7 +13,7 @@ class MongoDBClient():
     def __init__(self,database_name=DATABASE_NAME) -> None:
         try:
             if MongoDBClient.client is None:
-                mongo_db_url = os.getenv(MONGODB_URL_KEY)
+                mongo_db_url = MONGODB_URL_KEY
                 logging.info(mongo_db_url)
                 if mongo_db_url is None:
                     raise CustomException(f"Environment key {MONGODB_URL_KEY} is not set.",sys)
