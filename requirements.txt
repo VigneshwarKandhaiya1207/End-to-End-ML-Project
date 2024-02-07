@@ -13,5 +13,7 @@ Flask-Cors
 from_root
 pymongo
 dnspython
+dill
+evidently
 
 -e .
