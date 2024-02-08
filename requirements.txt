@@ -3,6 +3,7 @@ notebook
 numpy
 scikit-learn
 matplotlib
+imblearn
 python-box==6.0.2
 pyYAML
 ensure==1.0.2
@@ -14,6 +15,6 @@ from_root
 pymongo
 dnspython
 dill
-evidently
+evidently==0.2.8
 
 -e .
