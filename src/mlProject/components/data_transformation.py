@@ -76,6 +76,7 @@ class DataTransformation:
 
         except Exception as e:
             raise CustomException(e, sys) from e
+        
     def initiate_data_transformation(self, ) -> DataTransformationArtifact:
         """
         Method Name :   initiate_data_transformation
