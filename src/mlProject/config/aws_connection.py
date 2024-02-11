@@ -10,8 +10,6 @@ class S3Client:
             __access_key_id=os.getenv(AWS_ACCESS_KEY_ID_ENV_KEY,)
             __secret_access_key=os.getenv(AWS_SECRET_ACCESS_KEY_ENV_KEY,)
 
-            print(__access_key_id)
-            print(__secret_access_key)
             if __access_key_id==None:
                 raise Exception(f"Environment variable: {AWS_ACCESS_KEY_ID_ENV_KEY} is  not set.")
             if __secret_access_key==None:
