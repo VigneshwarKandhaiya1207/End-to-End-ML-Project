@@ -2,14 +2,6 @@
 
 #### Language and Libraries
 
-<p>
-<a><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen" alt="python"/></a>
-<a><img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/></a>
-<a><img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white" alt="numpy"/></a>
- <a><img src="https://matplotlib.org/_static/logo2_compressed.svg"width="110"/></a>
-<a><img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn"width="110"/></a>
-</p>
-
 ### About
 The Immigration and Nationality Act (INA) of the US permits foreign workers to come to the United States to work on either a temporary or permanent basis. 
 The act also protects US workers against adverse impacts on working place and maintain requirements when they hire foreign workers to fill workforce shortages. The immigration programs are administered by the Office of Foreign Labor Certification (OFLC).
@@ -56,9 +48,6 @@ Before we run the project, make sure that you are having MongoDB in your local s
 ## Project Archietecture
 ![image](https://user-images.githubusercontent.com/57321948/193536768-ae704adc-32d9-4c6c-b234-79c152f756c5.png)
 
-
-## Deployment Archietecture
-![image](https://user-images.githubusercontent.com/57321948/193536973-4530fe7d-5509-4609-bfd2-cd702fc82423.png)
 
 ### Step 1: Clone the repository
 ```bash
@@ -108,36 +97,12 @@ http://localhost:8080/train
 http://localhost:8080
 ```
 
-## Run locally
-
-1. Check if the Dockerfile is available in the project directory
-
-2. Build the Docker image
-
-```
-docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> --build-arg AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION> --build-arg MONGODB_URL=<MONGODB_URL> . 
-
-```
-
-3. Run the Docker image
-
-```
-docker run -d -p 8080:8080 <IMAGEID>
-```
 
 👨‍💻 Tech Stack Used
 1. Python
 2. FastAPI
 3. Machine learning algorithms
-4. Docker
-5. MongoDB
-
-🌐 Infrastructure Required.
-1. AWS S3
-2. AWS EC2
-3. AWS ECR
-4. Git Actions
-5. Terraform
+4. MongoDB
 
 ## Models Used
 * Logistic Regression
@@ -146,13 +111,12 @@ docker run -d -p 8080:8080 <IMAGEID>
 * CatBoost Classifier
 * RandomForest Classifier
 
-From these above models after hyperparameter optimization we selected Top two models which were XGBRegressor and Random Forest Regressors and used the following in Pipeline.
 
 * GridSearchCV is used for Hyperparameter Optimization in the pipeline.
 
 * Any modification has to be done in  Inside Config.yaml which can be done in route **/update_model_config**
 
-## `us_visa` is the main package folder which contains 
+## `mlProject` is the main package folder which contains 
 
 **Artifact** : Stores all artifacts created from running the application
 
