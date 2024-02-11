@@ -39,15 +39,6 @@ The data contains the different attributes of employee and the employer. The det
 - `full_time_position`: Is the position of work full-time? Y = Full Time Position; N = Part Time Position
 - `case_status`: Flag indicating if the Visa was certified or denied
 
-## How to run?
-Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
-
-## Data Collections
-![image](https://user-images.githubusercontent.com/57321948/193536736-5ccff349-d1fb-486e-b920-02ad7974d089.png)
-
-## Project Archietecture
-![image](https://user-images.githubusercontent.com/57321948/193536768-ae704adc-32d9-4c6c-b234-79c152f756c5.png)
-
 
 ### Step 1: Clone the repository
 ```bash
